@@ -1,0 +1,29 @@
+{
+	"schemaVersion": 1,
+	"id": "itemhide",
+	"version": "${version}",
+	"name": "ItemHide",
+	"description": "Macht gedroppte Items komplett unsichtbar: kein Rendering, keine Hitbox, nichts wird geladen. Toggle im Chat mit .item enable / .item disable",
+	"authors": [
+		"SpaceSMP"
+	],
+	"license": "CC0-1.0",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.example.itemhide.ItemHideClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "itemhide.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.2",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
